@@ -1,0 +1,10 @@
+﻿Console.Write("Target Row? ");
+int targetRow = int.Parse(Console.ReadLine());
+Console.Write("Target Column? ");
+int targetColumn = int.Parse(Console.ReadLine());
+Console.WriteLine("Deploy to: ");
+Console.WriteLine($"({targetRow}, {targetColumn - 1})");
+Console.WriteLine($"({targetRow - 1}, {targetColumn})");
+Console.WriteLine($"({targetRow}, {targetColumn + 1})");
+Console.WriteLine($"({targetRow + 1}, {targetColumn})");
+Console.ReadKey();
